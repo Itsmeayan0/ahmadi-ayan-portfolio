@@ -142,6 +142,7 @@
 /* footer variants */
 .btn-full {
   min-height: var(--btn-h);
+  min-width: 148px;
   background: linear-gradient(135deg, var(--green) 0%, var(--green-ink) 100%);
   border-color: transparent;
   color: #fff;
@@ -253,7 +254,7 @@
 .icon-btn:hover { transform: translateY(-1px); }
 
 .icon-dark {
-  background: linear-gradient(135deg, var(--ink), #1e2230);
+  background: linear-gradient(135deg, var(--ink-solid), #1e2230);
   color: #fff;
   box-shadow: 0 8px 20px -14px rgba(13, 15, 23, .9);
 }

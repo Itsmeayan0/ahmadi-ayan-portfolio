@@ -607,7 +607,7 @@
 /* ---------------- process ---------------- */
 .process-grid { display: grid; gap: 1rem; }
 .step {
-  background: var(--ink);
+  background: var(--ink-solid);
   border-radius: 24px;
   padding: clamp(1.2rem, 4.6vw, 1.9rem);
   color: #fff;
@@ -679,7 +679,7 @@
   top: 1rem; right: 1rem;
   padding: .22rem .55rem;
   border-radius: 999px;
-  background: var(--ink);
+  background: var(--ink-solid);
   color: #fff;
   font-size: .6rem;
   font-weight: 600;

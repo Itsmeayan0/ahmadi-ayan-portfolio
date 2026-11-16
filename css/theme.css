@@ -101,7 +101,7 @@
 [data-theme="dark"] .chips--plain li,
 [data-theme="dark"] .tags li { background: #1a1d27; color: #a3a3a3; }
 
-[data-theme="dark"] .step { background: #15171e; border: 1px solid #232733; }
+[data-theme="dark"] .step { border: 1px solid #232733; }
 
 [data-theme="dark"] .edu-meta,
 [data-theme="dark"] .proj-body p,

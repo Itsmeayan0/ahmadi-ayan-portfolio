@@ -142,13 +142,25 @@ if ("IntersectionObserver" in window) {
         io.unobserve(entry.target);
       });
     },
-    { rootMargin: "0px 0px -6% 0px", threshold: 0.05 }
+    /* threshold 0 so elements taller than the viewport can still trigger */
+    { rootMargin: "0px 0px -6% 0px", threshold: 0 }
   );
 
   qa(".exp, .edu, .cap, .proj, .step, .price, .beyond, .post-card").forEach((el) => {
     el.classList.add("reveal");
     io.observe(el);
   });
+
+  /* fail-safe: anything already on screen after load becomes visible */
+  const forceVisible = () => {
+    qa(".reveal:not(.in)").forEach((el) => {
+      const r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight) el.classList.add("in");
+    });
+  };
+  window.addEventListener("load", () => setTimeout(forceVisible, 400));
+} else {
+  qa(".reveal").forEach((el) => el.classList.add("in"));
 }
 
 /* ---------- in-page anchors ---------- */

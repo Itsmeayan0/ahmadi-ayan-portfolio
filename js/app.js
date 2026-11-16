@@ -191,13 +191,25 @@ if ("IntersectionObserver" in window) {
         io.unobserve(entry.target);
       });
     },
-    { rootMargin: "0px 0px -6% 0px", threshold: 0.06 }
+    /* threshold 0 so elements taller than the viewport can still trigger */
+    { rootMargin: "0px 0px -6% 0px", threshold: 0 }
   );
 
   $$(".post-card, .sec-title, .foot-card h2").forEach((el) => {
     el.classList.add("reveal");
     io.observe(el);
   });
+
+  /* fail-safe: anything already on screen after load becomes visible */
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      $$(".reveal:not(.in)").forEach((el) => {
+        if (el.getBoundingClientRect().top < window.innerHeight) el.classList.add("in");
+      });
+    }, 400);
+  });
+} else {
+  $$(".reveal").forEach((el) => el.classList.add("in"));
 }
 
 /* ---------- pause ticker when tab hidden ---------- */
