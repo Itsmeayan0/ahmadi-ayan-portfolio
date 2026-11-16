@@ -203,23 +203,10 @@
 }
 .tagline strong { color: var(--ink); font-weight: 500; }
 
-/* meet button */
+/* meet button — layout only, skin lives in buttons.css */
 .btn-meet {
-  display: inline-flex;
-  align-items: center;
   gap: .6rem;
-  height: 50px;
-  padding: 0 1.5rem;
-  border-radius: 999px;
-  background: var(--ink);
-  color: #fff;
-  font-size: .95rem;
-  font-weight: 500;
-  transition: background .2s var(--ease), transform .2s var(--ease);
-  box-shadow: 0 1px 2px rgba(13,15,23,.12);
 }
-.btn-meet:hover { background: #000; }
-.btn-meet:active { transform: scale(.97); }
 
 .meet-ico { display: grid; place-items: center; flex: 0 0 auto; }
 .meet-ico svg { width: 20px; height: 20px; display: block; transition: transform .3s var(--ease); }
@@ -327,38 +314,8 @@
   justify-content: center;
 }
 
-.btn-outline {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: .45rem;
-  min-height: 48px;
-  padding: .75rem 1.5rem;
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  background: var(--white);
-  font-size: .92rem;
-  font-weight: 500;
-  transition: border-color .22s var(--ease), background .22s var(--ease), transform .22s var(--ease);
-}
-.btn-outline:hover { border-color: var(--ink); transform: translateY(-1px); }
 .btn-block { width: 100%; }
 
-.btn-dark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-  min-height: 48px;
-  padding: .75rem 1.5rem;
-  border-radius: 999px;
-  background: var(--ink);
-  color: #fff;
-  font-size: .92rem;
-  font-weight: 500;
-  transition: background .2s var(--ease), transform .2s var(--ease);
-}
-.btn-dark:hover { background: #000; transform: translateY(-1px); }
 
 /* ---------------- chips ---------------- */
 .filter-chips {
@@ -368,21 +325,7 @@
   gap: .5rem;
   margin-bottom: clamp(1.4rem, 5vw, 3rem);
 }
-.chip {
-  padding: .55rem 1.35rem;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  background: var(--white);
-  font-size: .9rem;
-  font-weight: 500;
-  color: #171717;
-  transition: background .2s var(--ease), color .2s var(--ease);
-  -webkit-tap-highlight-color: transparent;
-}
-.chip:hover { background: #f1f1f1; }
-.chip.is-active { background: var(--ink); color: #fff; }
 
-.chips--plain { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: .8rem; }
 .chips--plain li {
   padding: .35rem .7rem;
   border-radius: 999px;

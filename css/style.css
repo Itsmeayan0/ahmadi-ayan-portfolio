@@ -360,23 +360,6 @@ main { display: block; }
   overflow: hidden;
 }
 
-.btn-pill {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: .5rem;
-  min-height: 46px;
-  padding: .72rem 1.4rem;
-  border-radius: 999px;
-  background: var(--white);
-  color: var(--ink);
-  font-size: .95rem;
-  font-weight: 500;
-  border: 1px solid transparent;
-  transition: transform .25s var(--ease), background .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease);
-}
-.btn-pill:hover { transform: translateY(-1px); border-color: var(--line); }
-.btn-pill:active { transform: scale(.98); }
 
 .featured .btn-pill { margin-top: 1.1rem; }
 
@@ -390,31 +373,7 @@ main { display: block; }
   margin-bottom: .95rem;
 }
 
-.chips {
-  display: flex;
-  flex-wrap: wrap;
-  gap: .5rem;
-  margin-bottom: 1.15rem;
-}
 
-.chip {
-  min-height: 40px;
-  padding: .5rem 1.05rem;
-  border-radius: 999px;
-  border: 1px solid var(--line);
-  background: var(--white);
-  font-size: .9rem;
-  font-weight: 500;
-  color: var(--ink);
-  transition: background .25s var(--ease), border-color .25s var(--ease), color .25s var(--ease);
-  -webkit-tap-highlight-color: transparent;
-}
-.chip:hover { border-color: #cfcfcf; }
-.chip.is-active {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: #fff;
-}
 
 .search-field {
   display: flex;
