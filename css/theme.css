@@ -216,18 +216,70 @@
 [data-theme="dark"] .theme-btn .moon { display: none; }
 
 /* =========================================================
-   particles
+   green particle field — full page overlay
    ========================================================= */
 #particles {
-  position: absolute;
+  position: fixed;
   inset: 0;
   width: 100%;
   height: 100%;
+  z-index: 25;
+  pointer-events: none;
+  opacity: .5;
+  mix-blend-mode: multiply;
+  transition: opacity .4s var(--ease);
+}
+[data-theme="dark"] #particles {
+  opacity: .75;
+  mix-blend-mode: screen;
+}
+
+/* soft green ambience behind the page */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
   z-index: 0;
   pointer-events: none;
-  opacity: .85;
+  background:
+    radial-gradient(720px circle at 12% -8%, rgba(16, 163, 96, .10), transparent 62%),
+    radial-gradient(680px circle at 92% 12%, rgba(16, 163, 96, .07), transparent 60%),
+    radial-gradient(900px circle at 50% 108%, rgba(16, 163, 96, .09), transparent 62%);
 }
-[data-theme="dark"] #particles { opacity: 1; }
+[data-theme="dark"] body::before {
+  background:
+    radial-gradient(720px circle at 12% -8%, rgba(52, 211, 153, .13), transparent 62%),
+    radial-gradient(680px circle at 92% 12%, rgba(52, 211, 153, .08), transparent 60%),
+    radial-gradient(900px circle at 50% 108%, rgba(52, 211, 153, .10), transparent 62%);
+}
 
-.hero-home { position: relative; }
-.hero-center, .eyes-wrap { position: relative; z-index: 2; }
+main, .hdr, .foot-wrap { position: relative; z-index: 2; }
+
+/* keep interactive layers above the field */
+.hdr, .menu-panel, .search-sheet, .fab, .toast, .scrim { z-index: 60; }
+
+/* green accent touches */
+:root {
+  --green: #10a360;
+  --green-soft: rgba(16, 163, 96, .1);
+  --green-ink: #0c8a51;
+}
+[data-theme="dark"] {
+  --green: #34d399;
+  --green-soft: rgba(52, 211, 153, .1);
+  --green-ink: #34d399;
+}
+
+.brand-dot { color: var(--green); }
+.pill-link.is-active { box-shadow: inset 0 -2px 0 var(--green); }
+.visit { color: var(--green-ink); }
+.text-link, .view-all:hover, .crumb a:hover { color: var(--green-ink); }
+.chip.is-active { background: var(--green); border-color: var(--green); }
+[data-theme="dark"] .chip.is-active { background: var(--green); color: #06251a; }
+.price-list li::before { background: var(--green); }
+.awards li::before { color: var(--green); }
+.read-time i { background: var(--green); }
+.ticker-track .dot { color: var(--green); }
+.cal-grid .pick { background: var(--green); color: #fff; }
+::selection { background: var(--green); color: #fff; }
+
