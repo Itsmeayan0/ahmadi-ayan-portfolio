@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 540" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FDF3D2"/>
+      <stop offset="0.62" stop-color="#FBEFC0"/>
+      <stop offset="1" stop-color="#F7E7AE"/>
+    </linearGradient>
+    <linearGradient id="city" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4E9C7A"/>
+      <stop offset="1" stop-color="#2F6F55"/>
+    </linearGradient>
+    <linearGradient id="city2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6FB894"/>
+      <stop offset="1" stop-color="#3E8A69"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="720" height="540" fill="url(#sky)"/>
+
+  <!-- badge -->
+  <g transform="translate(360 74)">
+    <circle r="26" fill="#fff" stroke="#2F6F55" stroke-width="2"/>
+    <path d="M-9 6c0-8 5-13 9-13s9 5 9 13z" fill="#2F6F55"/>
+    <circle cy="-13" r="4" fill="#2F6F55"/>
+    <text y="34" text-anchor="middle" font-family="Georgia,serif" font-size="15" letter-spacing="6" fill="#2F6F55">WORDCAMP</text>
+    <text y="52" text-anchor="middle" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#B4553C">Sylhet 2026</text>
+  </g>
+
+  <!-- photo circles -->
+  <g>
+    <circle cx="112" cy="248" r="52" fill="#C9D8C2" stroke="#fff" stroke-width="4"/>
+    <circle cx="236" cy="248" r="52" fill="#B9C6AE" stroke="#fff" stroke-width="4"/>
+    <circle cx="360" cy="248" r="52" fill="#8E9A86" stroke="#fff" stroke-width="4"/>
+    <circle cx="484" cy="248" r="52" fill="#C4CFBB" stroke="#fff" stroke-width="4"/>
+    <circle cx="608" cy="248" r="52" fill="#CBD9C3" stroke="#fff" stroke-width="4"/>
+    <g fill="#6F7F68" opacity="0.55">
+      <circle cx="112" cy="232" r="15"/><path d="M84 286c4-22 18-28 28-28s24 6 28 28z"/>
+      <circle cx="236" cy="232" r="15"/><path d="M208 286c4-22 18-28 28-28s24 6 28 28z"/>
+      <circle cx="360" cy="232" r="15"/><path d="M332 286c4-22 18-28 28-28s24 6 28 28z"/>
+      <circle cx="484" cy="232" r="15"/><path d="M456 286c4-22 18-28 28-28s24 6 28 28z"/>
+      <circle cx="608" cy="232" r="15"/><path d="M580 286c4-22 18-28 28-28s24 6 28 28z"/>
+    </g>
+  </g>
+
+  <!-- skyline back -->
+  <path d="M0 400h34v-46h26v46h20v-70h30v70h18v-34h22v34h26v-58h34v58h20v-40h26v40h34v-64h24v64h30v-30h22v30h28v-52h26v52h30v-38h24v38h26v-60h28v60h22v-26h24v26h24v-46h26v46h20v140H0z" fill="url(#city2)" opacity="0.85"/>
+
+  <!-- bridge -->
+  <g stroke="#2F6F55" stroke-width="5" fill="none">
+    <path d="M40 470c90-58 180-58 270 0"/>
+    <path d="M40 470h270"/>
+    <path d="M70 470l30-26M130 470l0-38M190 470l0-38M250 470l30-26"/>
+  </g>
+
+  <!-- clock tower -->
+  <g transform="translate(330 330)">
+    <rect x="-26" y="10" width="52" height="130" fill="url(#city)"/>
+    <rect x="-18" y="-18" width="36" height="30" fill="url(#city)"/>
+    <path d="M-24 -16l24-34 24 34z" fill="#2F6F55"/>
+    <circle cy="34" r="16" fill="#F4EBC9" stroke="#2F6F55" stroke-width="3"/>
+    <path d="M0 34V24M0 34l8 5" stroke="#2F6F55" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="-26" y="140" width="52" height="34" fill="#275C47"/>
+  </g>
+
+  <!-- mosque domes right -->
+  <g transform="translate(560 386)" fill="url(#city)">
+    <path d="M-58 156v-58c0-22 18-34 30-34s30 12 30 34v58z"/>
+    <path d="M-30 40c0-18 12-26 12-26s12 8 12 26z" fill="#2F6F55"/>
+    <rect x="-92" y="76" width="20" height="80" fill="#3E8A69"/>
+    <path d="M-92 76c0-12 10-18 10-18s10 6 10 18z" fill="#2F6F55"/>
+    <rect x="46" y="76" width="20" height="80" fill="#3E8A69"/>
+    <path d="M46 76c0-12 10-18 10-18s10 6 10 18z" fill="#2F6F55"/>
+  </g>
+
+  <!-- palms -->
+  <g stroke="#2F6F55" stroke-width="5" fill="none" stroke-linecap="round">
+    <path d="M96 542V452"/>
+    <path d="M96 452c-22-6-34-22-36-38M96 452c22-6 34-22 36-38M96 450c-26 6-40 2-52-8M96 450c26 6 40 2 52-8M96 456c-8-20-4-36 4-48"/>
+    <path d="M646 542V470"/>
+    <path d="M646 470c-18-4-28-18-30-30M646 470c18-4 28-18 30-30M646 468c-20 6-32 4-42-4M646 468c20 6 32 4 42-4"/>
+  </g>
+
+  <!-- foreground hill -->
+  <path d="M0 512c60-26 120-40 190-30 70 10 120 30 200 34 90 5 200-18 330-34v58H0z" fill="#2F6F55"/>
+  <path d="M0 528c90-16 170-22 260-10 90 12 190 22 300 12 60-5 120-12 160-16v26H0z" fill="#26573F"/>
+
+  <!-- birds -->
+  <g stroke="#3E8A69" stroke-width="2.4" fill="none" stroke-linecap="round" opacity="0.8">
+    <path d="M470 160c6-6 12-6 18 0M492 154c6-6 12-6 18 0M520 168c6-6 12-6 18 0"/>
+  </g>
+</svg>

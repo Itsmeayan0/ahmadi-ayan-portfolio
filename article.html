@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>WordCamp Sylhet 2026: My Experience, Sessions &amp; Takeaways — Ahmadi Ayan</title>
+<meta name="description" content="My trip from Dhaka to WordCamp Sylhet 2026: the sponsor stalls, standout sessions on AI, SEO and design, and the community moments that made it worth it." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/article.css" />
+</head>
+<body class="page-article">
+
+<header class="hdr" id="hdr">
+  <a class="brand" href="index.html" aria-label="Ahmadi Ayan — home">
+    <svg class="mark" viewBox="0 0 40 40" aria-hidden="true">
+      <path d="M9 31.5c3.4-11.8 7.6-21.2 12.4-21.2 4.4 0 5.6 8.4 6.8 14.4.9 4.5 2 6.8 3.8 6.8" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+      <path d="M12.5 26.5c4.6-1.4 9.4-1.7 14.6-1.1" fill="none" stroke="currentColor" stroke-width="3.2" stroke-linecap="round"/>
+    </svg>
+    <span class="brand-name">Ahmadi Ayan.</span>
+  </a>
+
+  <div class="hdr-actions">
+    <button class="icon-btn icon-dark" id="searchBtn" aria-label="Search" aria-expanded="false">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M15.8 15.8 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+    <button class="icon-btn icon-soft" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="menuPanel">
+      <span class="bars"><i></i><i></i><i></i></span>
+    </button>
+  </div>
+</header>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<nav class="menu-panel" id="menuPanel" hidden aria-label="Main menu">
+  <ul class="menu-list">
+    <li><a href="#" class="menu-link"><span class="mi">▬</span><span>Experience</span></a></li>
+    <li><a href="#" class="menu-link"><span class="mi">≣</span><span>Projects</span></a></li>
+    <li><a href="#" class="menu-link"><span class="mi">♥</span><span>Beyond Work</span></a></li>
+    <li><a href="blog.html" class="menu-link is-active"><span class="mi">✎</span><span>Blog</span></a></li>
+    <li>
+      <button class="menu-link acc-btn" id="accBtn" aria-expanded="false" aria-controls="accBody">
+        <span class="mi">▤</span><span>Resources</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="acc-body" id="accBody" hidden>
+        <a href="resources.html">Books &amp; Guides</a>
+        <a href="resources.html">Career Resources</a>
+        <a href="resources.html">Tools I use</a>
+        <a href="resources.html">Downloads</a>
+      </div>
+    </li>
+    <li><a href="#search" class="menu-link" id="menuSearch"><span class="mi">⌕</span><span>Search &amp; Actions</span></a></li>
+    <li><a href="#" class="menu-link"><span class="mi">▣</span><span>Resume &amp; CV</span></a></li>
+  </ul>
+</nav>
+
+<div class="search-sheet" id="searchSheet" hidden role="dialog" aria-modal="true" aria-label="Search and actions">
+  <div class="search-sheet-top">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.8 15.8 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" id="sheetInput" placeholder="Search blogs, projects, resources…" autocomplete="off" />
+    </div>
+    <button class="sheet-close" id="sheetClose" aria-label="Close search">✕</button>
+  </div>
+
+  <p class="sheet-label">Quick actions</p>
+  <ul class="sheet-actions">
+    <li><a href="blog.html">Read the blog</a><span>↗</span></li>
+    <li><a href="#" id="copyAction">Copy email address</a><span>⧉</span></li>
+    <li><a href="mailto:hello@ahmadiayan.com">Book a call</a><span>↗</span></li>
+    <li><a href="#">Download résumé</a><span>↓</span></li>
+  </ul>
+
+  <p class="sheet-label">Recent articles</p>
+  <ul class="sheet-results" id="sheetResults">
+    <li><a href="article.html">WordCamp Sylhet 2026: My Experience, Sessions &amp; Takeaways</a></li>
+  </ul>
+</div>
+
+<main class="article">
+
+  <div class="article-cover">
+    <img src="images/cover-wordcamp.svg" alt="WordCamp Sylhet 2026 cover artwork" />
+  </div>
+
+  <div class="article-wrap">
+
+    <p class="crumb"><a href="blog.html">← Back to blog</a></p>
+
+    <span class="cat-pill">Events &amp; Community</span>
+
+    <h1 class="article-title">WordCamp Sylhet 2026: My Experience, Sessions &amp; Takeaways</h1>
+
+    <div class="article-meta">
+      <div><span class="meta-label">Date</span><span class="meta-value">31 October 2026</span></div>
+      <div><span class="meta-label">Author</span><span class="meta-value">Ahmadi Ayan</span></div>
+      <div><span class="meta-label">Read</span><span class="meta-value">5 min read</span></div>
+    </div>
+
+    <!-- ============ TOC ============ -->
+    <div class="toc" id="toc">
+      <button class="toc-head" id="tocBtn" aria-expanded="true" aria-controls="tocBody">
+        <span>Table of Contents</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <ol class="toc-body" id="tocBody">
+        <li><a href="#key-takeaways">Key Takeaways</a></li>
+        <li><a href="#journey">The Journey from Dhaka to Sylhet</a></li>
+        <li><a href="#arriving">Arriving at WordCamp Sylhet 2026</a></li>
+        <li><a href="#stalls">Sponsor and Product Stalls</a></li>
+        <li><a href="#community">The Energy of the WordPress Community</a></li>
+        <li><a href="#sessions">Sessions That Made Me Think</a></li>
+        <li><a href="#stage">More Than What Happened on Stage</a></li>
+        <li><a href="#lunch">A Simple Lunch Break That Became a Good Memory</a></li>
+        <li><a href="#dhaka">From WordCamp Dhaka to WordCamp Sylhet</a></li>
+        <li><a href="#closing">Key Takeaways from WordCamp Sylhet 2026</a></li>
+        <li><a href="#home">Heading Back to Dhaka</a></li>
+      </ol>
+    </div>
+
+    <a class="preferred" href="#">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M21.6 12.2c0-.7-.1-1.4-.2-2H12v3.8h5.4a4.6 4.6 0 0 1-2 3v2.5h3.2c1.9-1.7 3-4.3 3-7.3z" fill="#4285F4"/>
+        <path d="M12 22c2.7 0 4.9-.9 6.6-2.5l-3.2-2.5c-.9.6-2 1-3.4 1-2.6 0-4.8-1.7-5.6-4.1H3.1v2.6A10 10 0 0 0 12 22z" fill="#34A853"/>
+        <path d="M6.4 13.9a6 6 0 0 1 0-3.8V7.5H3.1a10 10 0 0 0 0 9z" fill="#FBBC05"/>
+        <path d="M12 5.9c1.5 0 2.8.5 3.8 1.5l2.8-2.8A10 10 0 0 0 3.1 7.5l3.3 2.6C7.2 7.6 9.4 5.9 12 5.9z" fill="#EA4335"/>
+      </svg>
+      Add as Preferred Source
+    </a>
+
+    <div class="summarize">
+      <p class="summarize-label">Summarize with:</p>
+      <div class="summarize-btns">
+        <a href="#" aria-label="Summarize with ChatGPT" class="sum-btn">◎</a>
+        <a href="#" aria-label="Summarize with Perplexity" class="sum-btn">✳</a>
+        <a href="#" aria-label="Summarize with Gemini" class="sum-btn">✧</a>
+      </div>
+    </div>
+
+    <!-- ============ BODY ============ -->
+    <div class="prose">
+
+      <p class="lead">Some events are worth remembering not only because of what happens on stage, but because of the journey, the people, and the conversations around them. My trip to WordCamp Sylhet 2026 was one of those experiences.</p>
+
+      <p>In this post, I'm sharing how the trip went, the sessions that stood out to me, and what I took away from the event.</p>
+
+      <h2 id="key-takeaways">Key Takeaways</h2>
+
+      <div class="takeaways">
+        <div class="takeaway">
+          <h3>Keep learning</h3>
+          <p>Technology and the way we work are changing too quickly to stand still.</p>
+        </div>
+        <div class="takeaway">
+          <h3>Think beyond the screen</h3>
+          <p>Good design is not only about making something look better. It is about making better decisions.</p>
+        </div>
+        <div class="takeaway">
+          <h3>Look beyond the click</h3>
+          <p>Traffic and rankings are useful, but understanding what happens after the click matters even more.</p>
+        </div>
+        <div class="takeaway">
+          <h3>Use AI thoughtfully</h3>
+          <p>AI can make many parts of our work faster, but it does not remove the need for judgment, creativity and understanding.</p>
+        </div>
+        <div class="takeaway">
+          <h3>Show up for the community</h3>
+          <p>Some of the most valuable parts of an event happen between sessions.</p>
+        </div>
+      </div>
+
+      <h2 id="journey">The Journey from Dhaka to Sylhet</h2>
+      <p>Our journey started from Dhaka Airport Railway Station. I travelled to Sylhet with two of my senior colleagues from EchoaSoft Limited, Md. Khairul Islam Soykot and Nazmul Asif.</p>
+      <p>It was a different kind of work trip for us. Alongside attending WordCamp, we also got the chance to spend time together outside our usual work environment.</p>
+      <p>After reaching Sylhet, we checked in at Nirvana Inn. The hotel was in a convenient central location, close to the city centre and the railway station, which made it a practical base for the trip.</p>
+      <p>That evening, we explored a little of Sylhet city. Nothing too planned or complicated. We simply walked around, talked, ate, and enjoyed being somewhere different for a while.</p>
+
+      <h2 id="arriving">Arriving at WordCamp Sylhet 2026</h2>
+      <p>The conference was held at the Central Auditorium of Shahjalal University of Science and Technology on October 3.</p>
+      <p>WordCamp Sylhet 2026 brought together people working across development, design, marketing, support, freelancing, publishing and other parts of the WordPress ecosystem.</p>
+      <p>After reaching the venue, we received our attendee ID cards and breakfast before entering the main event area. We also got a nice event bag, a notepad, a pen and a few small gifts.</p>
+
+      <h2 id="stalls">Sponsor and Product Stalls</h2>
+      <p>The first thing that caught my eye was the sponsor and product stalls. Every stall had something different to show — hosting companies, plugin teams, agencies and product builders.</p>
+      <p>Talking to the people behind the products was more useful than reading about them online. You get the context, the trade-offs, and often the honest version of what the product is good at.</p>
+
+      <h2 id="community">The Energy of the WordPress Community</h2>
+      <p>What stands out at WordCamp is not the venue or the schedule. It is the people. Everyone is willing to share what they know, and nobody treats a question as a waste of time.</p>
+
+      <h2 id="sessions">Sessions That Made Me Think</h2>
+      <p>Three sessions stayed with me longer than the rest.</p>
+
+      <h3>Designing Decisions, Not Just Screens</h3>
+      <p>The talk argued that design work is really decision work. Screens are the output; the value is in the choices behind them — what to include, what to remove, and what the user should be able to do without thinking.</p>
+
+      <h3>Turning Reddit into an Organic Marketing Channel</h3>
+      <p>A practical look at how communities on Reddit actually work, why overt promotion fails there, and how consistent, useful participation compounds over time.</p>
+
+      <h3>What to Measure When Search Stops Sending Traffic</h3>
+      <p>With AI answers taking over more of the search results page, the session focused on what still matters: direct visits, returning readers, newsletter signups, and the quality of what happens after the click.</p>
+
+      <h3>Selling in WordPress and Building Products with AI</h3>
+      <p>A grounded take on using AI inside a product business — where it genuinely saves time and where it quietly creates new review work.</p>
+
+      <h2 id="stage">More Than What Happened on Stage</h2>
+      <p>The hallway conversations were as valuable as the talks. Meeting people I had only known through online threads made the community feel real rather than abstract.</p>
+
+      <h2 id="lunch">A Simple Lunch Break That Became a Good Memory</h2>
+      <p>Lunch was simple, but sitting with people from completely different kinds of work — a freelancer, an agency developer, a plugin author — turned into one of the best conversations of the day.</p>
+
+      <h2 id="dhaka">From WordCamp Dhaka to WordCamp Sylhet</h2>
+      <p>Having attended WordCamp Dhaka earlier, the difference was mostly in scale and pace. Sylhet felt calmer, and that made it easier to actually talk to people instead of rushing between rooms.</p>
+
+      <h2 id="closing">Key Takeaways from WordCamp Sylhet 2026</h2>
+      <p>If I had to compress the whole event into a few lines: keep learning, think beyond the screen, look past the click, use AI with judgment, and show up for the community.</p>
+
+      <h2 id="home">Heading Back to Dhaka</h2>
+      <p>We headed back the next day, tired but with notebooks full of things to try. Some events give you answers. This one gave me better questions.</p>
+
+      <div class="share-row">
+        <span class="share-label">Share this post</span>
+        <ul class="socials socials--light">
+          <li><a href="#" aria-label="Facebook">f</a></li>
+          <li><a href="#" aria-label="LinkedIn">in</a></li>
+          <li><a href="#" aria-label="X">𝕏</a></li>
+          <li><a href="#" aria-label="WhatsApp">✆</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <section class="related">
+    <div class="wrap">
+      <h2 class="sec-title">Keep reading</h2>
+      <div class="related-grid">
+        <article class="post-card">
+          <a class="post-thumb" href="article.html"><img src="images/cover-alt.svg" alt="Analytics cover" /></a>
+          <div class="post-body">
+            <h3 class="post-title"><a href="article.html">What to Measure When Search Stops Sending Traffic</a></h3>
+            <div class="post-foot">
+              <a class="btn-pill" href="article.html">Read Article</a>
+              <span class="read-time"><i></i>6 min read</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="post-card">
+          <a class="post-thumb" href="article.html"><img src="images/cover-design.svg" alt="Design cover" /></a>
+          <div class="post-body">
+            <h3 class="post-title"><a href="article.html">Designing Decisions, Not Just Screens</a></h3>
+            <div class="post-foot">
+              <a class="btn-pill" href="article.html">Read Article</a>
+              <span class="read-time"><i></i>4 min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Staying Curious</span><span class="dot">✦</span>
+      <span>Deep Research</span><span class="dot">✦</span>
+      <span>Good Coffee</span><span class="dot">✦</span>
+      <span>Real Craft</span><span class="dot">✦</span>
+      <span>Staying Curious</span><span class="dot">✦</span>
+      <span>Deep Research</span><span class="dot">✦</span>
+      <span>Good Coffee</span><span class="dot">✦</span>
+      <span>Real Craft</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <footer class="foot-wrap">
+    <div class="foot-card">
+      <h2>Good ideas. Bad ideas. All welcome.</h2>
+      <p class="foot-sub">Send them all. We'll shape it together.</p>
+
+      <div class="foot-btns">
+        <a class="btn-pill btn-full" href="mailto:hello@ahmadiayan.com">Let's Connect</a>
+        <button class="btn-pill btn-ghost" id="copyEmail">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m7 9 5 4 5-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Copy Email
+        </button>
+      </div>
+
+      <ul class="socials">
+        <li><a href="#" aria-label="Facebook">f</a></li>
+        <li><a href="#" aria-label="LinkedIn">in</a></li>
+        <li><a href="#" aria-label="X">𝕏</a></li>
+        <li><a href="#" aria-label="WhatsApp">✆</a></li>
+        <li><a href="#" aria-label="Behance">Bé</a></li>
+        <li><a href="#" aria-label="GitHub">◉</a></li>
+        <li><a href="#" aria-label="Dribbble">◍</a></li>
+      </ul>
+
+      <p class="signature" aria-hidden="true">Ahmadi Ayan</p>
+
+      <p class="foot-note"><span aria-hidden="true">♨</span> Made with curiosity, care &amp; coffee.</p>
+      <p class="foot-note"><span aria-hidden="true">©</span> 2026 Ahmadi Ayan. All rights reserved.</p>
+
+      <div class="foot-photo" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+</main>
+
+<button class="fab" id="fab" aria-label="Chat with me">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 5.5h16v10.5a2 2 0 0 1-2 2h-7.4L6 21v-2.5H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+    <circle cx="9" cy="11" r="1.1" fill="currentColor"/><circle cx="12.5" cy="11" r="1.1" fill="currentColor"/><circle cx="16" cy="11" r="1.1" fill="currentColor"/>
+  </svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/app.js"></script>
+<script src="js/article.js"></script>
+</body>
+</html>

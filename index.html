@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Ahmadi Ayan — Creative Designer &amp; Digital Builder</title>
+<meta name="description" content="I'm Ahmadi Ayan — a creative designer and digital builder. Turning ideas into things people love to see." />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" href="css/home.css" />
+</head>
+<body class="page-home">
+
+<!-- ================= HEADER ================= -->
+<header class="hdr hdr--home" id="hdr">
+  <div class="hdr-inner">
+    <a class="brand" href="index.html" aria-label="Ahmadi Ayan Home">
+      <span class="brand-name">Ahmadi Ayan</span>
+      <span class="brand-dot">.</span>
+    </a>
+
+    <nav class="pill-nav" aria-label="Main Navigation">
+      <a class="pill-link is-active" href="#experience">Experience</a>
+      <a class="pill-link" href="#projects">Projects</a>
+      <a class="pill-link" href="#beyond">Beyond Work</a>
+      <a class="pill-link" href="blog.html">Blog</a>
+      <a class="pill-link" href="resources.html">Resources</a>
+    </nav>
+
+    <div class="hdr-actions">
+      <button class="icon-btn icon-dark" id="searchBtn" aria-label="Search &amp; Actions" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M15.8 15.8 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <a class="btn-resume" href="resume.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="4.5" y="3" width="15" height="18" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.7"/>
+          <path d="M8.5 8h7M8.5 12h7M8.5 16h4" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+        </svg>
+        <span>Resume</span>
+      </a>
+
+      <button class="icon-btn icon-soft menu-only" id="menuBtn" aria-label="Toggle menu" aria-expanded="false" aria-controls="menuPanel">
+        <span class="bars"><i></i><i></i><i></i></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="scrim" id="scrim" hidden></div>
+
+<nav class="menu-panel" id="menuPanel" hidden aria-label="Main menu">
+  <ul class="menu-list">
+    <li><a href="#experience" class="menu-link"><span class="mi">▬</span><span>Experience</span></a></li>
+    <li><a href="#projects" class="menu-link"><span class="mi">≣</span><span>Projects</span></a></li>
+    <li><a href="#beyond" class="menu-link"><span class="mi">♥</span><span>Beyond Work</span></a></li>
+    <li><a href="blog.html" class="menu-link"><span class="mi">✎</span><span>Blog</span></a></li>
+    <li>
+      <button class="menu-link acc-btn" id="accBtn" aria-expanded="false" aria-controls="accBody">
+        <span class="mi">▤</span><span>Resources</span>
+        <svg class="chev" viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <div class="acc-body" id="accBody" hidden>
+        <a href="resources.html">Books &amp; Guides</a>
+        <a href="resources.html">Career Resources</a>
+        <a href="resources.html">My Creations</a>
+        <a href="resources.html">Videos</a>
+      </div>
+    </li>
+    <li><a href="#search" class="menu-link" id="menuSearch"><span class="mi">⌕</span><span>Search &amp; Actions</span></a></li>
+    <li><a href="resume.html" class="menu-link"><span class="mi">▣</span><span>Resume &amp; CV</span></a></li>
+  </ul>
+</nav>
+
+<div class="search-sheet" id="searchSheet" hidden role="dialog" aria-modal="true" aria-label="Search and actions">
+  <div class="search-sheet-top">
+    <div class="search-field">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.8 15.8 21 21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      <input type="search" id="sheetInput" placeholder="Search blogs, projects, resources…" autocomplete="off" />
+    </div>
+    <button class="sheet-close" id="sheetClose" aria-label="Close search">✕</button>
+  </div>
+
+  <p class="sheet-label">Quick actions</p>
+  <ul class="sheet-actions">
+    <li><a href="blog.html">Read the blog</a><span>↗</span></li>
+    <li><a href="#" id="copyAction">Copy email address</a><span>⧉</span></li>
+    <li><a href="mailto:hello@ahmadiayan.com">Book a call</a><span>↗</span></li>
+    <li><a href="#" id="resumeDownload">Download résumé</a><span>↓</span></li>
+  </ul>
+
+  <p class="sheet-label">Recent articles</p>
+  <ul class="sheet-results" id="sheetResults">
+    <li><a href="article.html">WordCamp Sylhet 2026: My Experience, Sessions &amp; Takeaways</a></li>
+  </ul>
+</div>
+
+<main>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero-home">
+    <div class="hero-center">
+
+      <div class="greeting">
+        <span class="wave-emoji" role="img" aria-label="Waving hand">👋</span>
+        <span class="greeting-text">Assalamu Alaikum</span>
+      </div>
+
+      <h1 class="display">
+        <span class="display-thin">I'm </span><span class="display-bold">Ahmadi Ayan</span>
+      </h1>
+
+            <div class="role-tabs" role="tablist" aria-label="Core focus areas">
+        <button class="role-tab" type="button" role="tab" aria-selected="false" data-role="Content Writer" style="--role-bg:#FFF2E0">
+          <span class="role-ico">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 4.7c0 .3 0 .55.03.79.03.26.12.55.36.79.24.24.53.32.79.36.24.03.52.03.82.03h3.33v4c0 1.89 0 2.83-.59 3.41-.58.59-1.53.59-3.41.59H6.67c-1.89 0-2.83 0-3.41-.59-.59-.58-.59-1.53-.59-3.41V5.33c0-1.89 0-2.83.59-3.41.58-.59 1.53-.59 3.41-.59H8v3.37Z" fill="currentColor"/><path d="M6 10.67a.67.67 0 1 0 0 1.33h2.67a.67.67 0 0 0 0-1.33H6Zm0-2.67a.67.67 0 0 0 0 1.33h4a.67.67 0 1 0 0-1.33H6Zm3.33-6.66c.28 0 .46.02.63.09.24.1.44.3.82.68l1.77 1.77c.39.39.58.58.68.82.07.17.09.35.1.63h-3.33c-.33 0-.52 0-.64-.02l-.01-.01-.01-.01c-.02-.13-.02-.31-.02-.64V1.34Z" fill="currentColor"/></svg>
+          </span>
+          <span class="role-label">Content Writer</span>
+        </button>
+
+        <button class="role-tab is-active" type="button" role="tab" aria-selected="true" data-role="Creative Designer" style="--role-bg:#F3F0FE">
+          <span class="role-ico">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M2.25 14.83h-.23c-.24-.07-.47-.25-.51-.51-.05-.3.21-.8.31-1.11.59-1.79.9-3.58.98-5.47.03-.69-.13-1.28.69-1.55.96-.33 2.05-.48 3.02-.8.34-.05.59 0 .85.22l3.34 3.35c.21.25.27.5.23.83-.27.92-.46 1.86-.73 2.78-.32 1.12-.78.94-1.8.99-.26.01-.52.01-.78.03-1.84.14-3.66.57-5.37 1.24ZM6.51 8.15c-2.1.09-1.95 3.27.12 3.2 2.1-.08 1.98-3.29-.12-3.2Z" fill="currentColor"/><path d="m10.23 1.5.31.13c1.38 1.28 2.68 2.66 4.02 3.99.12.14.19.28.25.46v.36c-.06.18-.12.32-.25.47-.21.26-1.35 1.42-1.6 1.55-.36.19-.77.15-1.08-.12-1.33-1.36-2.72-2.67-4-4.07-.21-.37-.16-.77.1-1.1.21-.26 1.35-1.42 1.6-1.55.09-.06.2-.08.3-.12h.36Z" fill="currentColor"/></svg>
+          </span>
+          <span class="role-label">Creative Designer</span>
+        </button>
+
+        <button class="role-tab" type="button" role="tab" aria-selected="false" data-role="AI-Assisted Builder" style="--role-bg:#DCF0FE">
+          <span class="role-ico">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1.6l1.5 3.6L13.2 6.8 9.5 8.4 8 12l-1.5-3.6L2.8 6.8 6.5 5.2 8 1.6Z" fill="currentColor"/><path d="M12.6 10.4l.7 1.7 1.7.7-1.7.7-.7 1.7-.7-1.7-1.7-.7 1.7-.7.7-1.7Z" fill="currentColor"/></svg>
+          </span>
+          <span class="role-label">AI-Assisted Builder</span>
+        </button>
+      </div>
+
+      <p class="tagline">I like turning ideas into things people <strong>love to see 👀</strong></p>
+
+      <a class="btn-meet" href="mailto:hello@ahmadiayan.com">
+        <span class="meet-ico">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M3.5 8.4c0-1.6 0-2.4.5-2.9.5-.5 1.3-.5 2.9-.5h4.2c1.6 0 2.4 0 2.9.5.5.5.5 1.3.5 2.9v7.2c0 1.6 0 2.4-.5 2.9-.5.5-1.3.5-2.9.5H6.9c-1.6 0-2.4 0-2.9-.5-.5-.5-.5-1.3-.5-2.9V8.4Z" fill="#fff"/>
+            <path d="M14.5 10.2l4.2-2.9c.5-.35.9-.1.9.5v8.4c0 .6-.4.85-.9.5l-4.2-2.9v-3.6Z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="meet-text">
+          <span class="meet-a">Book a Free Meeting</span>
+          <span class="meet-b">Book a Free Meeting</span>
+        </span>
+      </a>
+    </div>
+
+    <!-- big eyes -->
+    <div class="eyes-wrap" id="eyesWrap" title="Hi 👀" aria-hidden="true">
+      <div class="eye"><div class="pupil"><span class="glint"></span></div></div>
+      <div class="eye"><div class="pupil"><span class="glint glint--left"></span></div></div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="sect sect--gray" id="experience">
+    <div class="sect-inner">
+      <div class="sect-head sect-head--center">
+        <h2>Career Experience</h2>
+        <p class="sect-sub">Where I've worked and what I've built.</p>
+      </div>
+
+      <div class="chips filter-chips" role="tablist" aria-label="Filter experience">
+        <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="chip" data-filter="design" role="tab" aria-selected="false">Design</button>
+        <button class="chip" data-filter="writing" role="tab" aria-selected="false">Writing</button>
+        <button class="chip" data-filter="entrepreneurship" role="tab" aria-selected="false">Entrepreneurship</button>
+      </div>
+
+      <div class="exp-list" id="expList">
+
+        <article class="exp" data-tags="design entrepreneurship">
+          <div class="exp-card">
+            <p class="exp-brand"><span class="exp-mark logo-up">UP</span> UpNovate</p>
+            <h3>Founder &amp; CEO</h3>
+            <p class="exp-meta">
+              <span class="meta-ico">◉</span> Bangladesh
+              <span class="meta-dot">·</span>
+              <span class="meta-ico">▤</span> Year: 2026 – Present
+            </p>
+            <p class="exp-desc">Co-founded with a close friend, focused on custom software, websites, UI/UX, and digital solutions. I lead <strong>creative direction</strong>, <strong>client communication</strong>, and the <strong>executive side</strong>, while my co-founder handles development. I remain actively involved as a co-owner.</p>
+
+            <div class="sub-card">
+              <p class="sub-label">Our Clients</p>
+              <p class="sub-name">Bangladesh</p>
+              <p class="sub-desc">A digital solutions startup building websites, custom software, web applications, and digital products for businesses and organizations. Also providing <strong>creative design</strong>, <strong>growth marketing</strong>, <strong>cloud infrastructure</strong>, and <strong>startup consultancy</strong>.</p>
+              <ul class="tags"><li>Startup</li><li>Digital Solutions</li></ul>
+              <a class="visit" href="#">Visit Website <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp" data-tags="design">
+          <div class="exp-card">
+            <p class="exp-brand"><span class="exp-mark logo-echo">E</span> EchoaSoft Limited</p>
+            <h3>Creative Designer</h3>
+            <p class="exp-meta">
+              <span class="meta-ico">◉</span> Dhaka, Bangladesh
+              <span class="meta-dot">·</span>
+              <span class="meta-ico">▤</span> Oct 2024 – Oct 2026
+            </p>
+            <p class="exp-desc">Designing <strong>brand visuals</strong>, <strong>product assets</strong>, <strong>UI sections</strong>, and <strong>digital content</strong> for SAAS products while keeping communication clear and visually consistent.</p>
+
+            <div class="sub-card">
+              <p class="sub-label">Products I've Helped Stand Out</p>
+              <p class="sub-name">Dhaka, Bangladesh</p>
+              <p class="sub-desc">A WordPress product company building powerful plugins, SaaS-powered products, and digital solutions across the WordPress ecosystem. Focused on <strong>Divi</strong>, <strong>Gutenberg</strong>, website building, and performance tools for professionals, agencies, and businesses worldwide.</p>
+              <p class="trusted">Trusted by <strong>375K+ Websites</strong></p>
+              <ul class="stats">
+                <li><strong>375K+</strong><span>Websites</span></li>
+                <li><strong>195+</strong><span>Countries</span></li>
+                <li><strong>20+</strong><span>Products</span></li>
+              </ul>
+              <a class="visit" href="#">Visit Website <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp" data-tags="design">
+          <div class="exp-card">
+            <p class="exp-brand"><span class="exp-mark logo-sara">S</span> SARA Software Limited</p>
+            <h3>Designer</h3>
+            <p class="exp-meta">
+              <span class="meta-ico">◉</span> Dhaka, Bangladesh
+              <span class="meta-dot">·</span>
+              <span class="meta-ico">▤</span> Sep 2023 – Sep 2024
+            </p>
+            <p class="exp-desc">Designed <strong>social media graphics</strong>, <strong>promotional materials</strong>, <strong>print assets</strong>, and <strong>product interfaces</strong> while collaborating with developers on clear digital experiences.</p>
+
+            <div class="sub-card">
+              <p class="sub-label">Products I've Contributed to</p>
+              <p class="sub-name">Dhaka, Bangladesh</p>
+              <p class="sub-desc">A healthcare software company developing custom and cloud-based solutions for hospitals and diagnostic centers. Covering <strong>hospital management</strong>, <strong>diagnostics</strong>, <strong>billing</strong>, <strong>laboratory</strong>, <strong>prescription</strong>, and <strong>pharmacy operations</strong>.</p>
+              <ul class="tags"><li>Healthcare Technology</li><li>Custom Software</li><li>Cloud-Based Solutions</li></ul>
+              <a class="visit" href="#">Visit Website <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp" data-tags="design">
+          <div class="exp-card">
+            <p class="exp-brand"><span class="exp-mark logo-mone">M</span> Monepore.com &amp; SylhetBD</p>
+            <h3>Freelance Graphic Designer</h3>
+            <p class="exp-meta">
+              <span class="meta-ico">◉</span> Remote
+              <span class="meta-dot">·</span>
+              <span class="meta-ico">▤</span> Year: 2021 – 2023
+            </p>
+            <p class="exp-desc">Created <strong>social media graphics</strong>, <strong>promotional visuals</strong>, and <strong>brand assets</strong> for online businesses and different project-based client needs.</p>
+
+            <div class="sub-card">
+              <p class="sub-label">Sylhet, Bangladesh</p>
+              <p class="sub-desc">Worked across two digital ventures: <strong>Monepore</strong>, a Sylheti tea brand, and <strong>SylhetBD</strong>, a platform connecting local businesses and the wider community.</p>
+              <ul class="tags"><li>E-Commerce</li><li>Local Business</li><li>Community</li></ul>
+              <a class="visit" href="#">Visit Website <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp" data-tags="design">
+          <div class="exp-card">
+            <p class="exp-brand"><span class="exp-mark logo-dx">D</span> DesignXpress</p>
+            <h3>Intern Graphic Designer</h3>
+            <p class="exp-meta">
+              <span class="meta-ico">◉</span> Bogura, Bangladesh
+              <span class="meta-dot">·</span>
+              <span class="meta-ico">▤</span> Year: 2020 – 2021
+            </p>
+            <p class="exp-desc">Created <strong>digital templates</strong> and <strong>marketplace assets</strong> while gaining <strong>hands-on experience</strong> with professional design workflows and commercial creative projects.</p>
+
+            <div class="sub-card">
+              <p class="sub-label">Bogura, Bangladesh</p>
+              <p class="sub-desc">A design agency creating brand identities, digital experiences, marketing materials, and templates for global marketplaces.</p>
+              <ul class="stats">
+                <li><strong>24K+</strong><span>Templates</span></li>
+                <li><strong>45+</strong><span>Countries</span></li>
+              </ul>
+              <a class="visit" href="#">Visit Website <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <article class="exp" data-tags="writing">
+          <div class="exp-card">
+            <p class="exp-brand"><span class="exp-mark logo-ri">RI</span> Resume Inventor</p>
+            <h3>Freelance Senior Content Writer</h3>
+            <p class="exp-meta">
+              <span class="meta-ico">◉</span> Remote
+              <span class="meta-dot">·</span>
+              <span class="meta-ico">▤</span> Year: 2020 – 2021
+            </p>
+            <p class="exp-desc">Wrote <strong>blog content</strong>, <strong>social media posts</strong>, and <strong>email copy</strong>, supporting consistent content delivery across multiple channels and ongoing brand campaigns. Managed social media profiles and boosted overall brand visibility.</p>
+
+            <div class="sub-card">
+              <p class="sub-label">Sheridan, Wyoming, USA</p>
+              <p class="sub-desc">A career-focused design brand creating high-quality <strong>resume and CV templates</strong>, along with career resources and practical guidance to help job seekers build stronger applications.</p>
+              <ul class="tags"><li>Resume &amp; CV Templates</li><li>Career Resources</li></ul>
+              <a class="visit" href="#">Visit Website <span>↗</span></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="sect-foot">
+        <button class="btn-outline" id="allExpBtn">View All Experience</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BEHIND THE SCENES ================= -->
+  <section class="bts">
+    <p class="bts-text">A little <em>behind-the-scenes look</em> 👀 at the places, people, and moments that shaped my journey.</p>
+    <div class="bts-strip" aria-hidden="true">
+      <div class="bts-track">
+        <span class="ph p1"></span><span class="ph p2"></span><span class="ph p3"></span>
+        <span class="ph p4"></span><span class="ph p5"></span><span class="ph p6"></span>
+        <span class="ph p1"></span><span class="ph p2"></span><span class="ph p3"></span>
+        <span class="ph p4"></span><span class="ph p5"></span><span class="ph p6"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACADEMIC ================= -->
+  <section class="sect" id="education">
+    <div class="sect-inner">
+      <div class="sect-head sect-head--center">
+        <h2>Academic Journey</h2>
+        <p class="sect-sub">The foundation behind how I learn and think.</p>
+      </div>
+
+      <div class="edu-grid">
+        <article class="edu">
+          <h3>Karatoa Multimedia School &amp; College, Bogura</h3>
+          <p class="edu-degree">SSC (Science)</p>
+          <p class="edu-meta">Passing Year · 2021</p>
+        </article>
+        <article class="edu">
+          <h3>Gabtali Govt. College, Bogura</h3>
+          <p class="edu-degree">HSC (Science)</p>
+          <p class="edu-meta">Passing Year · 2023</p>
+        </article>
+        <article class="edu">
+          <h3>Uttara University, Dhaka</h3>
+          <p class="edu-degree">B.Sc. in CSE</p>
+          <p class="edu-meta">2024 - Present</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TOOLS ================= -->
+  <section class="sect sect--gray" id="tools">
+    <div class="sect-inner">
+      <div class="sect-head sect-head--center">
+        <h2>Tools &amp; Capabilities</h2>
+        <p class="sect-sub">A mix of tools I use to generate ideas, research, create, design, and build faster.</p>
+      </div>
+
+      <div class="tool-grid">
+        <article class="cap">
+          <div class="cap-head"><span class="cap-ico i1">✦</span><h3>Creative Design</h3></div>
+          <ul class="chips chips--plain">
+            <li>Brand Identity</li><li>Graphic Design</li><li>Marketing Design</li>
+            <li>Social Media Design</li><li>Visual Direction</li><li>Typography</li>
+            <li>Color Systems</li><li>Creative Campaigns</li>
+          </ul>
+        </article>
+
+        <article class="cap">
+          <div class="cap-head"><span class="cap-ico i2">▢</span><h3>UI &amp; Digital Design</h3></div>
+          <ul class="chips chips--plain">
+            <li>UI Layouts</li><li>Responsive Design</li><li>Wireframing</li>
+            <li>Design Systems</li><li>Hi-Fi Prototyping</li><li>Landing Pages</li>
+            <li>Product Visuals</li>
+          </ul>
+        </article>
+
+        <article class="cap">
+          <div class="cap-head"><span class="cap-ico i3">⌘</span><h3>AI-Assisted Development</h3></div>
+          <ul class="chips chips--plain">
+            <li>Rapid Prototyping</li><li>Prompt Engineering</li><li>React</li>
+            <li>Next.js</li><li>Tailwind CSS</li><li>Git</li><li>GitHub</li>
+          </ul>
+        </article>
+
+        <article class="cap">
+          <div class="cap-head"><span class="cap-ico i4">✎</span><h3>Content &amp; Strategy</h3></div>
+          <ul class="chips chips--plain">
+            <li>Content Strategy</li><li>UX Microcopy</li><li>Technology Writing</li>
+            <li>Design Writing</li><li>Social Copy</li><li>Brand Storytelling</li>
+            <li>Content Research</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="tool-row">
+        <div class="tool-group"><p class="tool-label">Design</p><p class="tool-items">Figma · FigJam · Photoshop · Illustrator</p></div>
+        <div class="tool-group"><p class="tool-label">AI &amp; Research</p><p class="tool-items">ChatGPT · Claude · Perplexity</p></div>
+        <div class="tool-group"><p class="tool-label">Development</p><p class="tool-items">VS Code · React · Next.js · Tailwind · Git · GitHub</p></div>
+        <div class="tool-group"><p class="tool-label">Productivity</p><p class="tool-items">Notion · Google Workspace · Slack · ClickUp</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="sect" id="projects">
+    <div class="sect-inner">
+      <div class="sect-head sect-head--center">
+        <h2>Recent Projects</h2>
+        <p class="sect-sub">A collection of ideas shaped into meaningful work.</p>
+      </div>
+
+      <div class="proj-grid">
+        <a class="proj" href="#">
+          <div class="proj-thumb t1"><span>Handbook</span></div>
+          <div class="proj-body">
+            <h3>Product Design &amp; Craft Handbook</h3>
+            <p>A practical guide for product people — decisions, craft, and the parts of design that don't fit in a style guide.</p>
+            <ul class="tags"><li>Editorial</li><li>Design</li></ul>
+          </div>
+        </a>
+
+        <a class="proj" href="#">
+          <div class="proj-thumb t2"><span>Monepore</span></div>
+          <div class="proj-body">
+            <h3>Monepore — Tea Brand Identity</h3>
+            <p>A Sylheti tea brand taken from packaging sketches to a full visual identity and social presence.</p>
+            <ul class="tags"><li>Branding</li><li>Social</li></ul>
+          </div>
+        </a>
+
+        <a class="proj" href="#">
+          <div class="proj-thumb t3"><span>Dashboard</span></div>
+          <div class="proj-body">
+            <h3>Healthcare Dashboard UI</h3>
+            <p>Interface work for hospital management — billing, laboratory, prescriptions and pharmacy in one flow.</p>
+            <ul class="tags"><li>UI Design</li><li>Product</li></ul>
+          </div>
+        </a>
+      </div>
+
+      <div class="sect-foot">
+        <a class="btn-outline" href="#">View More on Behance <span>↗</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW I WORK ================= -->
+  <section class="sect sect--gray" id="process">
+    <div class="sect-inner">
+      <div class="sect-head sect-head--center">
+        <h2>How I Work</h2>
+        <p class="sect-sub">A simple process from understanding to execution.</p>
+      </div>
+
+      <div class="process-grid">
+        <article class="step">
+          <span class="step-num">01</span>
+          <h3>Think Beyond the Brief</h3>
+          <p>Understand the real problem, the goal, and what really needs to be done.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">02</span>
+          <h3>Make Ideas Clear</h3>
+          <p>Turn complex ideas into simple, clear solutions that are easy to understand.</p>
+        </article>
+        <article class="step">
+          <span class="step-num">03</span>
+          <h3>Build &amp; Improve</h3>
+          <p>Shape the work, review the details, and improve it until everything feels right.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WORK TOGETHER ================= -->
+  <section class="sect" id="work-together">
+    <div class="sect-inner">
+      <div class="sect-head sect-head--center">
+        <h2>Ways to Work Together</h2>
+        <p class="sect-sub">Different needs. One creative partner to bring them together.</p>
+      </div>
+
+      <div class="price-grid">
+        <article class="price">
+          <h3>Creative Design</h3>
+          <p class="price-desc">Making ideas visible through design that feels clear and true to you.</p>
+          <p class="price-amount">From <strong>$50</strong> /hr</p>
+          <ul class="price-list">
+            <li>Brand &amp; marketing visuals</li>
+            <li>Social media design</li>
+            <li>Landing page sections</li>
+          </ul>
+          <a class="btn-outline btn-block" href="mailto:hello@ahmadiayan.com">Start a project</a>
+        </article>
+
+        <article class="price price--featured">
+          <span class="price-badge">Most requested</span>
+          <h3>Content &amp; Strategy</h3>
+          <p class="price-desc">Finding the right words to make your ideas easier to understand and remember.</p>
+          <p class="price-amount">From <strong>$50</strong> /hr</p>
+          <ul class="price-list">
+            <li>Content strategy &amp; voice</li>
+            <li>UX microcopy</li>
+            <li>Blog &amp; product writing</li>
+          </ul>
+          <a class="btn-dark btn-block" href="mailto:hello@ahmadiayan.com">Start a project</a>
+        </article>
+
+        <article class="price">
+          <h3>Creative Direction</h3>
+          <p class="price-desc">Bringing a fresh perspective when you're not sure where to go next.</p>
+          <p class="price-amount">From <strong>$80</strong> /hr</p>
+          <ul class="price-list">
+            <li>Visual direction</li>
+            <li>Design reviews</li>
+            <li>Campaign concepts</li>
+          </ul>
+          <a class="btn-outline btn-block" href="mailto:hello@ahmadiayan.com">Start a project</a>
+        </article>
+      </div>
+
+      <div class="pay">
+        <p class="pay-label">Accepted Payment Methods</p>
+        <ul class="pay-list">
+          <li>Bank Transfer</li><li>bKash</li><li>Nagad</li><li>PayPal</li><li>Wise</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BEYOND ================= -->
+  <section class="sect sect--gray" id="beyond">
+    <div class="sect-inner">
+      <div class="sect-head sect-head--center">
+        <h2>Beyond the Work</h2>
+        <p class="sect-sub">The things I enjoy, value, and carry beyond my career.</p>
+      </div>
+
+      <div class="beyond-grid">
+        <article class="beyond">
+          <div class="beyond-top"><span class="beyond-ico">⚜</span><h3>Bangladesh Scouts</h3></div>
+          <p class="beyond-desc">Scouting was where I first learned to <strong>lead, work as a team, and take responsibility</strong> for others. What started with the basics grew into a meaningful journey of leadership, discipline, service, and learning.</p>
+          <p class="beyond-desc">From leading teams to becoming a <strong>President's Scout</strong> and a globally recognized <strong>top achiever through ATAS</strong>, every step shaped how I critically observe, manage events, lead teams, and collaborate.</p>
+
+          <div class="awards">
+            <p class="awards-label">Awards &amp; Recognition</p>
+            <ul>
+              <li>President's Scout · 2018 (No. 3175/18)</li>
+              <li>Association of Top Achiever Scouts (ATAS) No. 10848</li>
+              <li>National Service Award · 2021</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="beyond">
+          <div class="beyond-top"><span class="beyond-ico blood">◍</span><h3>Building a Blood Donor Community</h3></div>
+          <p class="beyond-desc">For the past 3–4 years, I've donated blood whenever I can. Alongside donating, I built a <strong>blood donor directory</strong> to help people find and connect with the right donor when they need it most.</p>
+          <p class="beyond-desc">What started as giving blood became a bigger purpose: making it easier for people to help each other.</p>
+
+          <div class="awards">
+            <p class="awards-label">Contribution</p>
+            <ul>
+              <li>Lifelong Blood Donor · Quantum Blood Bank</li>
+              <li>Built &amp; Coordinated</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BLOG ================= -->
+  <section class="sect" id="blog">
+    <div class="sect-inner">
+      <div class="sect-head sect-head--center">
+        <h2>Blog &amp; Thoughts</h2>
+        <p class="sect-sub">Ideas, insights, and lessons worth sharing.</p>
+      </div>
+
+      <div class="blog-grid">
+        <article class="post-card">
+          <a class="post-thumb" href="article.html">
+            <img src="images/cover-wordcamp.svg" alt="WordCamp Sylhet 2026 cover" />
+          </a>
+          <div class="post-body">
+            <h3 class="post-title"><a href="article.html">WordCamp Sylhet 2026: My Experience, Sessions &amp; Takeaways</a></h3>
+            <div class="post-foot">
+              <a class="btn-pill" href="article.html">Read Article</a>
+              <span class="read-time"><i></i>5 min read</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="sect-foot">
+        <a class="btn-outline" href="blog.html">View All Articles</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TICKER ================= -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>Staying Curious</span><span class="dot">✦</span>
+      <span>Deep Research</span><span class="dot">✦</span>
+      <span>Coffee</span><span class="dot">✦</span>
+      <span>Flow State</span><span class="dot">✦</span>
+      <span>Learning Every Day</span><span class="dot">✦</span>
+      <span>Exploring AI</span><span class="dot">✦</span>
+      <span>Staying Curious</span><span class="dot">✦</span>
+      <span>Deep Research</span><span class="dot">✦</span>
+      <span>Coffee</span><span class="dot">✦</span>
+      <span>Flow State</span><span class="dot">✦</span>
+      <span>Learning Every Day</span><span class="dot">✦</span>
+      <span>Exploring AI</span><span class="dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="foot-wrap">
+    <div class="foot-card">
+      <h2>Good ideas. Bad ideas. All welcome.<br>Send them all. We'll shape it together.</h2>
+
+      <div class="foot-btns">
+        <a class="btn-pill btn-full" href="mailto:hello@ahmadiayan.com">Let's Connect</a>
+        <button class="btn-pill btn-ghost" id="copyEmail">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m7 9 5 4 5-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+          Copy Email
+        </button>
+      </div>
+
+      <ul class="socials">
+        <li><a href="#" aria-label="Facebook">f</a></li>
+        <li><a href="#" aria-label="LinkedIn">in</a></li>
+        <li><a href="#" aria-label="Twitter">𝕏</a></li>
+        <li><a href="#" aria-label="WhatsApp">✆</a></li>
+        <li><a href="#" aria-label="Behance">Bé</a></li>
+        <li><a href="#" aria-label="GitHub">◉</a></li>
+        <li><a href="#" aria-label="Medium">M</a></li>
+      </ul>
+
+      <p class="signature" aria-hidden="true">Ahmadi Ayan</p>
+
+      <p class="foot-note"><span aria-hidden="true">♨</span> Made with curiosity, care &amp; coffee.</p>
+      <p class="foot-note"><span aria-hidden="true">©</span> 2026 Ahmadi Ayan. All rights reserved.</p>
+
+      <div class="foot-photo" aria-hidden="true"></div>
+    </div>
+  </footer>
+
+</main>
+
+<button class="fab" id="fab" aria-label="Chat with me">
+  <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M4 5.5h16v10.5a2 2 0 0 1-2 2h-7.4L6 21v-2.5H6a2 2 0 0 1-2-2z" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linejoin="round"/>
+    <circle cx="9" cy="11" r="1.1" fill="currentColor"/><circle cx="12.5" cy="11" r="1.1" fill="currentColor"/><circle cx="16" cy="11" r="1.1" fill="currentColor"/>
+  </svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+</body>
+</html>
