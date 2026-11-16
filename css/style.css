@@ -363,6 +363,14 @@ main { display: block; }
 
 .featured .btn-pill { margin-top: 1.1rem; }
 
+/* ---------------- chip row wrappers (layout) ---------------- */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-bottom: 1.15rem;
+}
+
 /* ================= EXPLORE ================= */
 .explore { padding-top: clamp(2.2rem, 9vw, 3.4rem); }
 

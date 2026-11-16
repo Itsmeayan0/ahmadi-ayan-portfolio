@@ -326,6 +326,13 @@
   margin-bottom: clamp(1.4rem, 5vw, 3rem);
 }
 
+.chips--plain {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .45rem;
+  margin-top: .8rem;
+}
+
 .chips--plain li {
   padding: .35rem .7rem;
   border-radius: 999px;

@@ -57,7 +57,9 @@
 [data-theme="dark"] .glint { background: #0d0f17; }
 
 
-/* role tabs keep their soft tints but tone down */
+/* role tabs keep their soft tints in dark — force readable ink */
+[data-theme="dark"] .role-tab { color: #0d0f17; }
+[data-theme="dark"] .role-tab .role-label { color: #0d0f17; }
 
 /* sections */
 [data-theme="dark"] .sect--gray { background: #0d0f17; }
@@ -95,6 +97,9 @@
 
 
 
+
+[data-theme="dark"] .chips--plain li,
+[data-theme="dark"] .tags li { background: #1a1d27; color: #a3a3a3; }
 
 [data-theme="dark"] .step { background: #15171e; border: 1px solid #232733; }
 
